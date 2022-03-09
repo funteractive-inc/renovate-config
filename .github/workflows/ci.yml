@@ -20,6 +20,9 @@ jobs:
       run: |
         for file in *.json
         do
+          if [ $file = 'package.json' ]; then
+            continue
+          fi
           echo "[CI] Validate: $file"
           RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
         done
