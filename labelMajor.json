@@ -1,0 +1,6 @@
+{
+    "matchUpdateTypes": "major",
+    "addLabels": [
+        "major"
+    ]
+}

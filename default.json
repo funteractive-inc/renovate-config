@@ -1,13 +1,14 @@
 {
     "extends": [
         "config:base",
-        ":dependencyDashboard",
-        ":prConcurrentLimit10",
-        ":separateMultipleMajorReleases",
-        ":timezone(Asia/Tokyo)"
-    ],
-    "ignorePresets": [
-        ":prConcurrentLimit20"
+        "github>funteractive-inc/renovate-config:schedule",
+        "github>funteractive-inc/renovate-config:labelMajor",
+        "github>funteractive-inc/renovate-config:automergePin",
+        "github>funteractive-inc/renovate-config:automergePatch",
+        "github>funteractive-inc/renovate-config:automergeTypesMinor",
+        "github>funteractive-inc/renovate-config:groupLinters",
+        "github>funteractive-inc/renovate-config:groupJest",
+        "github>funteractive-inc/renovate-config:groupReact"
     ],
     "labels": [
         "dependency"
