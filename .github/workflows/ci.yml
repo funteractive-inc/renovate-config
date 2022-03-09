@@ -1,0 +1,25 @@
+name: Validate renovate config
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: volta-cli/action@v1
+    - name: Validate renovate config
+      run: |
+        for file in *.json
+        do
+          echo "[CI] Validate: $file"
+          RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
+        done
