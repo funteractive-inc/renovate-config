@@ -1,12 +1,16 @@
 {
-    "groupName": "linters",
-    "extends": [
-        "packages:linters"
-    ],
-    "packageNames": [
-        "prettier"
-    ],
-    "packagePatterns": [
-        "^@typescript-eslint/"
+    "packageRules": [
+        {
+            "groupName": "linters",
+            "extends": [
+                "packages:linters"
+            ],
+            "packageNames": [
+                "prettier"
+            ],
+            "packagePatterns": [
+                "^@typescript-eslint/"
+            ]
+        }
     ]
 }
