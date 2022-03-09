@@ -1,0 +1,9 @@
+{
+  "name": "renovate-config",
+  "version": "0.0.0",
+  "repository": "git@github.com:funteractive-inc/renovate-config.git",
+  "license": "MIT",
+  "volta": {
+    "node": "16.14.0"
+  }
+}
