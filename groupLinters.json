@@ -5,10 +5,10 @@
             "extends": [
                 "packages:linters"
             ],
-            "packageNames": [
+            "matchPackageNames": [
                 "prettier"
             ],
-            "packagePatterns": [
+            "matchPackagePatterns": [
                 "^@typescript-eslint/"
             ]
         }
