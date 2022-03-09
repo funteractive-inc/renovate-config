@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "config:base",
+        ":dependencyDashboard",
+        ":prConcurrentLimit10",
+        ":separateMultipleMajorReleases",
+        ":timezone(Asia/Tokyo)"
+    ],
+    "ignorePresets": [
+        ":prConcurrentLimit20"
+    ],
+    "labels": [
+        "dependency"
+    ],
+    "dockerfile": {
+        "fileMatch": [
+            "(^|/)Dockerfile-[^/]*$"
+        ]
+    }
+}
