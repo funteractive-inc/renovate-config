@@ -1,16 +1,13 @@
 {
     "packageRules": [
         {
-            "groupName": "linters",
-            "extends": [
-                "packages:linters"
-            ],
-            "packageNames": [
-                "prettier"
-            ],
             "packagePatterns": [
-                "^@typescript-eslint/"
-            ]
+                "^@types/"
+            ],
+            "automerge": true,
+            "major": {
+                "automerge": false
+            }
         }
     ]
 }
