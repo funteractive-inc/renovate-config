@@ -1,6 +1,7 @@
 {
     "extends": [
         "config:base",
+        ":enableVulnerabilityAlertsWithLabel(security)",
         "github>funteractive-inc/renovate-config:schedule",
         "github>funteractive-inc/renovate-config:labelMajor",
         "github>funteractive-inc/renovate-config:automergePinPatch",
