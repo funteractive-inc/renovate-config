@@ -13,12 +13,8 @@ Funteractive社内向けのRenovate[共有preset](https://docs.renovatebot.com/c
 
 ## preset 一覧
 
-### [autoMergePatch](https://github.com/funteractive-inc/renovate-config/blob/main/autoMergePatch.json)
-patch updateを自動マージ
-
-
-### [autoMergePin](https://github.com/funteractive-inc/renovate-config/blob/main/autoMergePin.json)
-version固定PRを自動マージ
+### [autoMergePinPatch](https://github.com/funteractive-inc/renovate-config/blob/main/autoMergePinPatch.json)
+version固定およびpatch updateのPRを自動マージ
 
 ### [autoMergeTypesMinor](https://github.com/funteractive-inc/renovate-config/blob/main/autoMergeTypesMinor.json)
 型定義のminor/patch updateを自動マージ
