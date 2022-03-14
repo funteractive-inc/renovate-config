@@ -13,10 +13,10 @@ Funteractive社内向けのRenovate[共有preset](https://docs.renovatebot.com/c
 
 ## preset 一覧
 
-### [autoMergePinPatch](https://github.com/funteractive-inc/renovate-config/blob/main/autoMergePinPatch.json)
+### [autoMergePinPatch](https://github.com/funteractive-inc/renovate-config/blob/main/automergePinPatch.json)
 version固定およびpatch updateのPRを自動マージ
 
-### [autoMergeTypesMinor](https://github.com/funteractive-inc/renovate-config/blob/main/autoMergeTypesMinor.json)
+### [autoMergeTypesMinor](https://github.com/funteractive-inc/renovate-config/blob/main/automergeTypesMinor.json)
 型定義のminor/patch updateを自動マージ
 
 ### [groupLinters](https://github.com/funteractive-inc/renovate-config/blob/main/groupLinters.json)
@@ -25,7 +25,7 @@ linter関連パッケージをグループ化
 ### [groupJest](https://github.com/funteractive-inc/renovate-config/blob/main/groupJest.json)
 
 jest関連パッケージをグループ化
-### [groupReact](https://github.com/funteractive-inc/renovate-config/blob/main/autoMergeTypesMinor.json)
+### [groupReact](https://github.com/funteractive-inc/renovate-config/blob/main/groupReact.json)
 
 react関連パッケージをグループ化
 
