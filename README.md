@@ -11,6 +11,9 @@ Funteractive社内向けのRenovate[共有preset](https://docs.renovatebot.com/c
 }
 ```
 
+## 拡張例
+[examples](https://github.com/funteractive-inc/renovate-config/blob/main/examples)に拡張例を載せています。
+
 ## preset 一覧
 
 ### [autoMergePinPatch](https://github.com/funteractive-inc/renovate-config/blob/main/automergePinPatch.json)
