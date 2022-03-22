@@ -38,4 +38,4 @@ major update PRに`major`ラベル付与
 
 ### [schedule](https://github.com/funteractive-inc/renovate-config/blob/main/schedule.json)
 
-日本時間平日の 10:00 ~ 18:00 のみ稼働
+日本時間平日の 00:00 - 08:00, 20:00 - 24:00のみ稼働
