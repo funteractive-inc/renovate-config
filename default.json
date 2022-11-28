@@ -17,5 +17,8 @@
         "fileMatch": [
             "(^|/)Dockerfile-[^/]*$"
         ]
+    },
+    "minor": {
+        "stabilityDays": 3
     }
 }
