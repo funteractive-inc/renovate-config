@@ -13,6 +13,7 @@
     "labels": [
         "dependency"
     ],
+    "prConcurrentLimit": 5,
     "dockerfile": {
         "fileMatch": [
             "(^|/)Dockerfile-[^/]*$"
