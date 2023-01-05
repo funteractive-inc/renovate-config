@@ -19,8 +19,6 @@
             "(^|/)Dockerfile-[^/]*$"
         ]
     },
-    "minor": {
-        "internalChecksFilter": "strict",
-        "stabilityDays": 3
-    }
+    "stabilityDays": 3,
+    "internalChecksFilter": "strict"
 }
