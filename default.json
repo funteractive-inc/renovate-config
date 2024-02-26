@@ -1,6 +1,6 @@
 {
     "extends": [
-        "config:base",
+        "config:recommended",
         ":enableVulnerabilityAlertsWithLabel(security)",
         "github>funteractive-inc/renovate-config:schedule",
         "github>funteractive-inc/renovate-config:labelMajor",
@@ -19,6 +19,6 @@
             "(^|/)Dockerfile-[^/]*$"
         ]
     },
-    "stabilityDays": 3,
+    "minimumReleaseAge": "3 days",
     "internalChecksFilter": "strict"
 }
