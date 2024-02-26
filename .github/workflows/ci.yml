@@ -9,11 +9,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      CI: true
     steps:
       - uses: actions/checkout@v4
-
-      - name: Validate
-        uses: rinchsan/renovate-config-validator@v0.2.0
-        with:
-          pattern: "*.json"
+      - uses: volta-cli/action@v4
+      - name: Validate renovate config
+        run: |
+          for file in *.json
+          do
+            if [ $file = 'package.json' ]; then
+              continue
+            fi
+            echo "[CI] Validate: $file"
+            RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
+          done
