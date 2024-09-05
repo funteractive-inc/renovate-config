@@ -1,0 +1,13 @@
+{
+  "packageRules": [
+    {
+      "groupName": "msw",
+      "labels": [
+        "renovate"
+      ],
+      "matchPackagePatterns": [
+        "^msw"
+      ]
+    }
+  ]
+}
